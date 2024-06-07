@@ -1,36 +1,21 @@
 #!/bin/bash
 
-# Define the output directories
-output_dirs=(
-  "bin/linux/amd64"
-  "bin/linux/arm64"
-  "bin/win/amd64"
-  "bin/win/arm64"
-  "bin/macos/amd64"
-  "bin/macos/arm64"
-)
+# Linux AMD64
+GOOS=linux GOARCH=amd64 go build -o bin/har2sequence-linux-amd64 main.go
 
-# Create the output directories if they don't exist
-for dir in "${output_dirs[@]}"; do
-  mkdir -p "$dir"
-done
+# Linux ARM64
+GOOS=linux GOARCH=arm64 go build -o bin/har2sequence-linux-arm64 main.go
 
-# Build for 64-bit Linux
-GOOS=linux GOARCH=amd64 go build -o bin/linux/amd64/har2sequence
+# macOS AMD64
+GOOS=darwin GOARCH=amd64 go build -o bin/har2sequence-macos-amd64 main.go
 
-# Build for ARM64 Linux
-GOOS=linux GOARCH=arm64 go build -o bin/linux/arm64/har2sequence
+# macOS ARM64
+GOOS=darwin GOARCH=arm64 go build -o bin/har2sequence-macos-arm64 main.go
 
-# Build for 64-bit Windows
-GOOS=windows GOARCH=amd64 go build -o bin/win/amd64/har2sequence.exe
+# Windows AMD64
+GOOS=windows GOARCH=amd64 go build -o bin/har2sequence-win-amd64.exe main.go
 
-# Build for ARM64 Windows
-GOOS=windows GOARCH=arm64 go build -o bin/win/arm64/har2sequence.exe
-
-# Build for 64-bit macOS (Intel)
-GOOS=darwin GOARCH=amd64 go build -o bin/macos/amd64/har2sequence
-
-# Build for ARM64 macOS (Apple Silicon)
-GOOS=darwin GOARCH=arm64 go build -o bin/macos/arm64/har2sequence
+# Windows ARM64
+GOOS=windows GOARCH=arm64 go build -o bin/har2sequence-win-arm64.exe main.go
 
 echo "Build completed successfully."
