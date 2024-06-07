@@ -26,12 +26,12 @@ chmod +x /usr/local/bin/har2sequence
 
 ### Download Links for Other Platforms
 
-- https://github.com/tasuku43/har2sequence/releases/download/v.0.1.0/har2sequence-linux-arm64
-- https://github.com/tasuku43/har2sequence/releases/download/v.0.1.0/har2sequence-linux-amd64
-- https://github.com/tasuku43/har2sequence/releases/download/v.0.1.0/har2sequence-macos-amd64
-- https://github.com/tasuku43/har2sequence/releases/download/v.0.1.0/har2sequence-macos-arm64
-- https://github.com/tasuku43/har2sequence/releases/download/v.0.1.0/har2sequence-win-amd64.exe
-- https://github.com/tasuku43/har2sequence/releases/download/v.0.1.0/har2sequence-win-arm64.exe
+- https://github.com/tasuku43/har2sequence/releases/download/v0.1.0/har2sequence-linux-arm64
+- https://github.com/tasuku43/har2sequence/releases/download/v0.1.0/har2sequence-linux-amd64
+- https://github.com/tasuku43/har2sequence/releases/download/v0.1.0/har2sequence-macos-amd64
+- https://github.com/tasuku43/har2sequence/releases/download/v0.1.0/har2sequence-macos-arm64
+- https://github.com/tasuku43/har2sequence/releases/download/v0.1.0/har2sequence-win-amd64.exe
+- https://github.com/tasuku43/har2sequence/releases/download/v0.1.0/har2sequence-win-arm64.exe
 ```
 
 ## Usage
