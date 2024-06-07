@@ -1,0 +1,12 @@
+participants:
+  - "example.com"
+  - "api.example.com"
+excludePaths:
+  - "example.com/exclude-this-path"
+  - "api.example.com/exclude-this-path"
+messagePrefixes:
+  GET: "🟢 "
+  POST: "🟠 "
+  PUT: "🟣 "
+  PATCH: "🟡 "
+  DELETE: "🔴 "
